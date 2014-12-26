@@ -1,12 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#edeff0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
 
-    <TextView
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="33dp"
+        android:text="原创囧图" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/button1"
+        android:text="娱乐大众" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="恶搞朋友" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:layout_marginLeft="17dp"
+        android:src="@drawable/pichh" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/picyy" />
+ 
 </RelativeLayout>
